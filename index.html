@@ -23,11 +23,11 @@
     'https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '1863041204266352');
     fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1863041204266352&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Meta Pixel Code -->
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1863041204266352&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 </head>
 <body>
     <header class="logo animate__animated animate__flip">
@@ -39,7 +39,6 @@
             <p>Bienvenidos<br>
             Tu cajero de confianza <br>
             carga tus fichas y retira tu dinero al instante</p>
-            </p>
         </section>
 
         <section class="whatsapp">
@@ -48,14 +47,18 @@
                 <img src="./img/whatsapp_5968967.png" alt="Whatsapp">
             </button>
         </section> 
-     <script>
+
+        <script>
         document.getElementById("whatsappButton").addEventListener("click", function() {
+            // Envía evento Purchase al pixel
+            fbq('track', 'Purchase', {value: 3000, currency: 'ARS'});
+
             const telefono = "+5493513981136";
             const mensaje = "Buenas quiero crear un usuario , Mi nombre es : .";
             const link = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
             window.open(link, '_blank');
         });
-    </script>
+        </script>
     </main>
 
     <div class="info">
@@ -70,7 +73,6 @@
             <p>El juego conlleva riesgos financieros. Juega con responsabilidad.</p>
         </div>
     </div>
-    
 
     <script src="ofusco.js"></script>
 </body>
