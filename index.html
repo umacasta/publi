@@ -1,70 +1,17 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Red Verificada</title>
-
-  <!-- ✅ Facebook Pixel -->
-  <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1863041204266352');  
-    fbq('track', 'PageView');
-  </script>
-  <noscript>
-    <img height="1" width="1" style="display:none"
-         src="https://www.facebook.com/tr?id=1863041204266352&ev=PageView&noscript=1"
-  <style>
-    body {
-      margin: 0;
-      background: black;
-      color: white;
-      font-family: 'Arial', sans-serif;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 30px;
-    }
-
-    a.btn-wsp {
-      background-color: #25d366;
-      color: white;
-      font-size: 1.2rem;
-      padding: 15px 25px;
-      border-radius: 8px;
-      text-decoration: none;
-    }
-  </style>
-</head>
-
-<body>
-  <h1>RED VERIFICADA</h1>
-
-  <!-- ✅ Botón a WhatsApp -->
-  <a id="btnWhatsapp" class="btn-wsp"
-     href="https://wa.me/5493574443943?text=Hola%20quiero%20el%20bono"
-     target="_blank">
-     Escribinos por WhatsApp
-  </a>
-
-  <!-- ✅ Evento Contact al hacer clic -->
-  <script>
-    document.getElementById('btnWhatsapp').addEventListener('click', function() {
-      fbq('track', 'Contact');
-    });
-  </script>
-</body>
-</html>
+<a href="https://wa.me/5493515737969?text=Hola%2C%20quisiera%20un%20usuario%2C%20mi%20nombre%20es" 
+   onclick="fetch('https://hook.eu2.make.com/yh8msufudosmv4ed8e5fzpv7yod1', { method: 'POST' });"
+   target="_blank"
+   style="
+     display: inline-block;
+     padding: 15px 25px;
+     background-color: #25D366;
+     color: white;
+     border-radius: 10px;
+     font-size: 18px;
+     font-weight: bold;
+     text-decoration: none;
+     font-family: 'Arial', sans-serif;
+     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+   ">
+   Pedí tu usuario por WhatsApp
+</a>
